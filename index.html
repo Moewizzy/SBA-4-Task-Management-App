@@ -9,58 +9,61 @@
 </head>
 <body>
     <main class="container">
-    <h1>Task Manger</h1>
+            <h1>Task Manger</h1>
 
-    <!-- Add a new task -->
-    <form id="task-form" class="card">
-        <input id="task-name" type="text" placeholder="Task name" required>
+            <!-- Add a new task -->
+            <form id="task-form" class="card">
+                <input id="task-name" type="text" placeholder="Task name" required>
 
-        <select id="task-catagory">
-            <option>Work</option>
-            <option>School</option>
-            <option>Personal</option>
-            <option>Other</option>
-        </select>
+                <select id="task-catagory">
+                    <option>Work</option>
+                    <option>School</option>
+                    <option>Personal</option>
+                    <option>Other</option>
+                </select>
 
-        <input id="task-deadline"
-        type="date" required>
+                <input id="task-deadline"
+                type="date" required>
 
-        <select id="task-status">
-            <option>In Progress</option>
-            <option>Completed</option>
-        </select>
+                <select id="task-status">
+                    <option>In Progress</option>
+                    <option>Completed</option>
+                </select>
 
-        <button type="submit">Add Task</button>
-    </form>
+                <button type="submit">Add Task</button>
+            </form>
 
-<!-- Feedback (screen reader)-->
-     <p id="message" aria-live="polite">
-    </p>
+        <!-- Feedback (screen reader)-->
+            <p id="message" aria-live="polite">
+            </p>
 
-<!-- Filter Task -->
-    <div class="card filters">
-        <label>
-            <select id="filter-status">
-                <option>All</option>
-                <option>In Progress</option>
-                <option>Completd</option>
-                <option>Overdue</option>
-            </select>
-        </label>
+        <!-- Filter Task -->
+            <div class="card filters">
+                <label>
+                    <select id="filter-status">
+                        <option>All</option>
+                        <option>In Progress</option>
+                        <option>Completd</option>
+                        <option>Overdue</option>
+                    </select>
+                </label>
 
-        <label>Catagory
-            <select id="filter-catagory">
-                <option>All</option>
-                <option>Work</option>
-                <option>School</option>
-                <option>Personal</option>
-                <option>Other</option>
-            </select>
-        </label>
+                <label>Catagory
+                    <select id="filter-catagory">
+                        <option>All</option>
+                        <option>Work</option>
+                        <option>School</option>
+                        <option>Personal</option>
+                        <option>Other</option>
+                    </select>
+                </label>
 
-      <span id= "count"></span>
+            <span id= "count"></span>
 
-    </div>
+            </div>
+        <ul id="task-list">
 
+        </ul> 
+    </main>    
 </body>
 </html>
