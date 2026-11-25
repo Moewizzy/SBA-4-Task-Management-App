@@ -3,7 +3,7 @@
 // and saves the array to localStorage so it survives a page refresh.
 
 const STORAGE_KEY = "tasks";
-const STATUSES = ["In-Progress", "Completed", "Overdue"];
+const STATUSES = ["In Progress", "Completed", "Overdue"];
 
 // DOM references
 const form = document.getElementById("task-form");
@@ -90,7 +90,7 @@ function getFilteredTasks() {
 // so whatever the user types is shown as text, never run as HTML.
 function createTaskItem(task) {
   // The <li> gets the class "task" plus a CSS friendly version of its status
-  // (for example "In-Progress" becomes "task in-progress").
+  // (for example "In Progress" becomes "task in-progress").
   const li = document.createElement("li");
   li.className = `task ${task.status.replaceAll(" ", "-").toLowerCase()}`;
 
