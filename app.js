@@ -29,7 +29,17 @@ let messageTimer;
 function showMessage(text) {
     message.textContent = text;
     clearTimeout(messageTimer);
-    messageTimer = setTimeout(()
- => (message.textContent=""), 2000);
+    messageTimer = setTimeout(() =>
+    (message.textContent=""), 2000);
+}
+
+// Date Helper
+// deadline counts as passed once that whole day (local time)
+function isPastDeadline(deadline) {
+    return new Date(`${deadline} T23:59:59`) < new Date();
+}
+
+function formatDate(deadline) {
+    return new Date(`${deadline}T00:00:00`).toLocaleDateString();
 }
 
